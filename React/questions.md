@@ -770,11 +770,15 @@ export default class LoginComponent extends Component {
 152. **Flux**: **application design paradigm** used as a replacement for more traditional MVC pattern. It is a new kind of arhcitecture that complements reach and the concept of unidirectional data flow. 
 ![flux](./img/flux.png)
 
-153. **Redux**: predictable state container for JS app based on FLUX design pattern. 
+153. **Redux**: predictable state container for JS app based on FLUX design pattern.  It is used in **managing and centralizing apps state and it is usually used along with JS libraries. It is predictable state container for apps built using JS 
 154. ***Core principles of Redux**: 
     * **Single Source of truth**
     * **State is read-only**
     * **Changes are made with pure function**
+
+* **Difference between Redux and Flux** 
+
+| Comparision Param | Redux | Flux | 
 156. WHat is difference between `mapStateToProps()` and `mapDispatchToProps()`
 * `mapStateToProps` is a utility which helps your component get updated state. 
 ```js 
@@ -794,7 +798,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 ```
-157. Can I dispatch an action in reducer: This is an anti-patterm/ you reducer should be without side effects
+157. Can I dispatch an action in reducer: This is an anti-pattern you reducer should be without side effects
 
 158. How to access reduc store outside compoent
 * You just need to export the story from the module where it is created with` createStore()`. Also it shouldn't pollute global window object. 
